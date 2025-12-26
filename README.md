@@ -260,7 +260,7 @@ If you or someone you know is in crisis, please reach out:
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/Keerthana55-bit/Mental-Health-Suicide-Detection-Using-Social-Media-Posts)
+- GitHub: [@Keerthana55-bit](https://github.com/Keerthana55-bit/Mental-Health-Suicide-Detection-Using-Social-Media-Posts)
 - Name: Keerthana Pathipati
 
 
