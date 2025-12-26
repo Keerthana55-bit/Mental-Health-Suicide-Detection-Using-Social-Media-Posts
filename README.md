@@ -2,6 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://www.tensorflow.org/)
+[![Platform](https://img.shields.io/badge/Platform-Google%20Colab-yellow)](https://colab.research.google.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Accuracy](https://img.shields.io/badge/Accuracy-96.57%25-success)](/)
 
@@ -13,53 +14,29 @@
 
 In today's digital landscape, individuals increasingly express emotional distress, depression, and suicidal thoughts through social media platforms. However, manually identifying these critical warning signs at scale is virtually impossible.
 
-This project presents an **end-to-end intelligent system** that automatically detects suicidal tendencies and mental health risks from textual content using advanced NLP, Machine Learning, and Deep Learning techniques.
+This project presents an **end-to-end intelligent system** that automatically detects suicidal tendencies and mental health risks from textual content using advanced NLP, Machine Learning, and Deep Learning techniques.  
+All experiments, training, and evaluation were conducted using **Google Colab** for scalable computing and GPU acceleration.
 
 **Key Achievement:** 96.57% accuracy with real-time prediction capabilities for immediate intervention support.
 
 ---
 
-## 🎯 Objectives
+## 🏗️ Development Environment
 
-- ✅ Detect suicidal and high-risk mental health language patterns from text  
-- ✅ Perform deep linguistic and emotional analysis using NLP techniques  
-- ✅ Train a high-performance deep learning model with robust evaluation  
-- ✅ Provide a real-time prediction interface for practical deployment  
-- ✅ Support early intervention and promote mental health awareness  
+- **Platform:** Google Colab  
+- **Language:** Python 3.8+  
+- **Frameworks:** TensorFlow 2.x, Keras  
+- **Libraries:** NLTK, Scikit-learn, Pandas, NumPy, TextBlob  
 
 ---
 
-## 📂 Project Structure
-```
-mental-health-detection/
-│
-├── data/
-│   ├── Suicide_Detection.csv
-│   └── mental_health_cleaned.csv
-│
-├── models/
-│   ├── best_mental_health_model.h5
-│   ├── tokenizer.pkl
-│   ├── label_encoder.pkl
-│   ├── tfidf_vectorizer.pkl
-│   └── scaler.pkl
-│
-├── notebooks/
-│   ├── Stage1_Data_Loading.ipynb
-│   ├── Stage2_Preprocessing.ipynb
-│   ├── Stage3_EDA.ipynb
-│   ├── Stage4_Feature_Engineering.ipynb
-│   ├── Stage5_Model_Training.ipynb
-│   ├── Stage6_Evaluation.ipynb
-│   └── Stage7_RealTime_Prediction.ipynb
-│
-├── app/
-│   └── realtime_predictor.py
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
+## 🎯 Objectives
+
+- ✅ Detect suicidal and high-risk mental health language patterns  
+- ✅ Apply advanced NLP and emotional analysis  
+- ✅ Train high-performance deep learning models  
+- ✅ Provide real-time prediction interface  
+- ✅ Enable early intervention support  
 
 ---
 
@@ -184,31 +161,33 @@ Confidence: 98.9%
 - TensorFlow 2.x
 - CUDA (optional, for GPU acceleration)
 
-### Installation Steps
+## 💻 Installation & Setup
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/mental-health-detection.git
-cd mental-health-detection
+### Using Google Colab (Recommended)
+
+This project was developed in Google Colab for easy access to GPU resources.
+
+1. **Open in Google Colab**
+   - Click on any notebook in the `notebooks/` folder
+   - Click "Open in Colab" badge or upload to your Google Drive
+
+2. **Install dependencies**
+```python
+!pip install -r requirements.txt
 ```
 
-2. **Create virtual environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. **Install dependencies**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Download NLTK data**
+3. **Download NLTK data**
 ```python
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
+```
+
+4. **Mount Google Drive (if storing models/data there)**
+```python
+from google.colab import drive
+drive.mount('/content/drive')
 ```
 
 ---
@@ -261,17 +240,6 @@ This project is designed with the following ethical principles:
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
 
 ## 📝 License
 
@@ -292,20 +260,11 @@ If you or someone you know is in crisis, please reach out:
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@yourusername](https://github.com/Keerthana55-bit/Mental-Health-Suicide-Detection-Using-Social-Media-Posts)
+- Name: Keerthana Pathipati
+
 
 ---
-
-## 🙏 Acknowledgments
-
-- Kaggle for providing the Suicide Watch Dataset
-- Mental health professionals who validate the importance of this work
-- Open-source community for excellent ML/NLP libraries
-
----
-
 ## 📚 References
 
 1. Dataset: [Kaggle Suicide Watch Dataset](https://www.kaggle.com/)
@@ -313,24 +272,6 @@ If you or someone you know is in crisis, please reach out:
 3. Research papers on NLP for mental health detection
 
 ---
-
-<div align="center">
-
-**⚠️ If you're struggling with mental health, please seek help from qualified professionals**
-
-Made with ❤️ for mental health awareness
-
-</div>
-EOF
-
-# Add to git
-git add README.md
-
-# Commit
-git commit -m "Add comprehensive README documentation"
-
-# Push to GitHub
-git push origin main
 
 
 
