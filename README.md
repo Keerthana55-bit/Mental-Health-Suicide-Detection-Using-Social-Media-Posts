@@ -64,9 +64,6 @@ Real-Time Prediction System
 
 Our web interface provides an intuitive way to analyze mental health risks from text:
 
-**Initial State:**
-![Mental Health Detection Interface](images/p1.png)
-
 **Prediction Result:**
 ![Suicide Risk Detection Result](images/p2.png)
 
