@@ -58,6 +58,25 @@ Real-Time Prediction System
 ```
 
 ---
+## 🖼️ System Interface
+
+### Real-Time Prediction Demo
+
+Our web interface provides an intuitive way to analyze mental health risks from text:
+
+**Initial State:**
+![Mental Health Detection Interface](path/to/image1.png)
+
+**Prediction Result:**
+![Suicide Risk Detection Result](path/to/image2.png)
+
+The system displays:
+- ✅ Clear prediction labels (SUICIDE/NON-SUICIDE)
+- ✅ Confidence percentage
+- ✅ Visual risk indicator with color-coded alerts
+- ✅ User-friendly interface for immediate assessment
+
+---
 
 ## 📊 Dataset
 
